@@ -5,7 +5,7 @@
 
 ### Prerequisites
 
-Python 3.6 required and the django=1.11 framework.
+    Python 3.6 required and the django=1.11 framework.
 
 ### Set-Up
 
