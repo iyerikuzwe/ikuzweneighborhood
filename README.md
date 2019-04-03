@@ -1,6 +1,6 @@
 # project-name
     neighborhood
-
+#
 This is a website where users keep tabs on what's happening in their neighbourhood. Users can create and join various neighbourhoods. 
 
 ### Prerequisites
