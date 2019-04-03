@@ -25,12 +25,12 @@
     7) On terminal run `python3.6 manage.py runserver`
 
 ## Features
-1) Users can create their neighbourhoods
-2) Users can join existing neighbourhoods or their own created ones.
-3) Users can post on their neighbourhoods.
-4) Users can view businesses available in their own neighbourhoods.
-5) Users can search for specific neighbourhoods.
-6) Users can upload their business info once they join a neighbourhood.
+    1) Users can create their neighbourhoods
+    2) Users can join existing neighbourhoods or their own created ones.
+    3) Users can post on their neighbourhoods.
+    4) Users can view businesses available in their own neighbourhoods.
+    5) Users can search for specific neighbourhoods.
+    6) Users can upload their business info once they join a neighbourhood.
 
 
 ### Known bugs
