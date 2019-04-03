@@ -42,8 +42,7 @@
     This application was made with Python version 3.6 using the django framework. The templates were made using html and was styled using css and bootstrap 3. The database used was postgresql, it was edited using visual studio code and deployed to heroku.
 
 ## Support and Contact details
-    Incase of additions or if you run into any issues, my email address is:
-    iyerikuzweregine19@gmail.com
+    Incase of additions or if you run into any issues, my email address is:iyerikuzweregine19@gmail.com
 
 ## License
 
