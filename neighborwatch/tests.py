@@ -139,7 +139,7 @@ class PostsTestClass(TestCase):
         self.user = User.objects.create(id =1, username='a')
         self.hood = Neighbour(name='ikuzwe', location='kagugu', user=self.user)
         self.hood.save_hood()
-        self.post = Posts(body="bizna", user=self.user, hood=self.hood)
+        self.post = Posts(body="bisness", user=self.user, hood=self.hood)
 
     def test_instance(self):
         self.assertTrue(isinstance(self.post, Posts))
