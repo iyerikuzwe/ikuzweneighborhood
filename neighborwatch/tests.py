@@ -165,9 +165,9 @@ class PostsTestClass(TestCase):
         Function to test that a post's details can be updated
         """
         self.post.save_posts()
-        new_posts = Posts.objects.filter(body='bizna').update(body='biznas')
-        bizes = Posts.objects.get(body='biznas')
-        self.assertTrue(bizes.body, 'biznas')
+        new_posts = Posts.objects.filter(body='bisness').update(body='bisnesses')
+        bizes = Posts.objects.get(body='bisnesses')
+        self.assertTrue(bizes.body, 'bisnesses')
 
         
  
