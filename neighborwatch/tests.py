@@ -37,7 +37,7 @@ class HoodTestClass(TestCase):
         Function to test that a neighbourhood's details can be updated
         """
         self.hood.save_hood()
-        new_hood = Neighbour.objects.filter(name='mtaani').update(name='Bias')
+        new_hood = Neighbour.objects.filter(name='ikuzwe').update(name='Bias')
         hoods = Neighbour.objects.get(name='Bias')
         self.assertTrue(hoods.name, 'Bias')
 
