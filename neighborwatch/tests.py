@@ -57,7 +57,7 @@ class ProfileTestClass(TestCase):
     """
     def setUp(self):
         self.user = User.objects.create(id =1,username='a')
-        self.hood = Neighbour(name='mtaani', location='huko tu', user=self.user)
+        self.hood = Neighbour(name='ikuzwe', location='kagugu', user=self.user)
         self.hood.save_hood()
         self.pro = Profile(user=self.user, hood = self.hood)
 
@@ -87,9 +87,9 @@ class BusinessTestClass(TestCase):
     """
     def setUp(self):
         self.user = User.objects.create(id =1, username='a')
-        self.hood = Neighbour(name='mtaani', location='huko tu', user=self.user)
+        self.hood = Neighbour(name='ikuzwe', location='kagugu', user=self.user)
         self.hood.save_hood()
-        self.biz = Business(name="bizna", email="kokoko@gmail.com", user=self.user, hood=self.hood)
+        self.biz = Business(name="bizna", email="ikuzwe@gmail.com", user=self.user, hood=self.hood)
 
     def test_instance(self):
         self.assertTrue(isinstance(self.biz, Business))
