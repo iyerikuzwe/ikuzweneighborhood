@@ -19,7 +19,7 @@ class HoodTestClass(TestCase):
     
     def test_save_method(self):
         """
-        Function to test that neighbourhood is being saved.
+        Function to test that neighbourhood is being saved
         """
         self.hood.save_hood()
         hoods = Neighbour.objects.all()
