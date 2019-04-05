@@ -11,7 +11,7 @@ class HoodTestClass(TestCase):
     """
     def setUp(self):
         self.user = User.objects.create(id =1, username='a')
-        self.hood = Neighbour(name='ikuzwe', location='huko tu', user=self.user)
+        self.hood = Neighbour(name='ikuzwe', location='kagugu', user=self.user)
 
     def test_instance(self):
         self.assertTrue(isinstance(self.hood, Neighbour))
