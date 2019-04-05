@@ -37,9 +37,9 @@ class HoodTestClass(TestCase):
         Function to test that a neighbourhood's details can be updated
         """
         self.hood.save_hood()
-        new_hood = Neighbour.objects.filter(name='mtaani').update(name='Bias')
-        hoods = Neighbour.objects.get(name='Bias')
-        self.assertTrue(hoods.name, 'Bias')
+        new_hood = Neighbour.objects.filter(name='ikuzwe').update(name='Bisness')
+        hoods = Neighbour.objects.get(name='Bisness')
+        self.assertTrue(hoods.name, 'Bisness')
 
     
     def test_get_by_id(self):
@@ -57,7 +57,7 @@ class ProfileTestClass(TestCase):
     """
     def setUp(self):
         self.user = User.objects.create(id =1,username='a')
-        self.hood = Neighbour(name='mtaani', location='huko tu', user=self.user)
+        self.hood = Neighbour(name='ikuzwe', location='kagugu', user=self.user)
         self.hood.save_hood()
         self.pro = Profile(user=self.user, hood = self.hood)
 
@@ -87,9 +87,9 @@ class BusinessTestClass(TestCase):
     """
     def setUp(self):
         self.user = User.objects.create(id =1, username='a')
-        self.hood = Neighbour(name='mtaani', location='huko tu', user=self.user)
+        self.hood = Neighbour(name='ikuzwe', location='kagugu', user=self.user)
         self.hood.save_hood()
-        self.biz = Business(name="bizna", email="kokoko@gmail.com", user=self.user, hood=self.hood)
+        self.biz = Business(name="bisness", email="ikuzwe@gmail.com", user=self.user, hood=self.hood)
 
     def test_instance(self):
         self.assertTrue(isinstance(self.biz, Business))
@@ -115,9 +115,9 @@ class BusinessTestClass(TestCase):
         Function to test that a neighbourhood's details can be updated
         """
         self.biz.save_biz()
-        new_biz = Business.objects.filter(name='bizna').update(name='biznas')
-        bizes = Business.objects.get(name='biznas')
-        self.assertTrue(bizes.name, 'biznas')
+        new_biz = Business.objects.filter(name='bisness').update(name='bisnesses')
+        bizes = Business.objects.get(name='bisnesses')
+        self.assertTrue(bizes.name, 'bisnesses')
 
 
     def test_get_by_id(self):
@@ -137,7 +137,7 @@ class PostsTestClass(TestCase):
     """
     def setUp(self):
         self.user = User.objects.create(id =1, username='a')
-        self.hood = Neighbour(name='mtaani', location='huko tu', user=self.user)
+        self.hood = Neighbour(name='ikuzwe', location='kagugu', user=self.user)
         self.hood.save_hood()
         self.post = Posts(body="bizna", user=self.user, hood=self.hood)
 
