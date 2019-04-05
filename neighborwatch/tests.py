@@ -137,7 +137,7 @@ class PostsTestClass(TestCase):
     """
     def setUp(self):
         self.user = User.objects.create(id =1, username='a')
-        self.hood = Neighbour(name='mtaani', location='huko tu', user=self.user)
+        self.hood = Neighbour(name='ikuzwe', location='kagugu', user=self.user)
         self.hood.save_hood()
         self.post = Posts(body="bizna", user=self.user, hood=self.hood)
 
