@@ -7,7 +7,7 @@ from django.contrib.auth.models import User
 
 class HoodTestClass(TestCase):
     """
-    Test neighbour class and its functions
+    Test neighbour class and its functions.
     """
     def setUp(self):
         self.user = User.objects.create(id =1, username='a')
