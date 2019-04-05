@@ -8,13 +8,13 @@ panel{
 }
 .desc{
     font-family: 'Philosopher', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .locale{
     font-family: 'Patua One', cursive;
     float: right;
-    font-size: 19px;
+    font-size: 12px;
 }
 .btn-danger{
     float: right;

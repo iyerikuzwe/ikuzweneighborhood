@@ -18,11 +18,11 @@
      <p class="locale">{{hood.location}}</p>
     </div>
     <div class="panel-footer">
-    <a href ="{% url 'joinhood' hood.id %}" class="btn btn-primary btn-md">Join</a>
+    <a href ="{% url 'joinhood' hood.id %}" class="btn btn-primary btn-md">Join hood</a>
      {% if hood.user_id ==  user.id%}
       <a href ="/edithood/{{hood.id}}" class="btn btn-info btn-md">Edit hood</a>
 
-        <a href ="/deletehood/{{hood.id}}" class="btn btn-danger btn-md">       <span class="glyphicon glyphicon-trash"></span>
+        <a href ="/deletehood/{{hood.id}}" class="btn btn-danger btn-md">Delete hood<span class="glyphicon glyphicon-trash"></span>
         </a>
     {% endif %}
     </div>

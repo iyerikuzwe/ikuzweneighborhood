@@ -38,7 +38,7 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=30)),
                 ('description', models.TextField(default='welcome to the coolest hood')),
-                ('location', models.CharField(choices=[('Westlands', 'Westlands'), ('South b', 'South b'), ('South c', 'South c'), ('Langata', 'Langata'), ('Satelite', 'Satelite'), ('Buruburu', 'Buruburu'), ('Kinoo', 'Kinoo'), ('Donholm', 'Donholm'), ('Karen', 'Karen')], max_length=30)),
+                ('location', models.CharField(choices=[('Kagugu', 'kagugu'), ('kimironko', 'kimironko'), ('nyamagabe', 'nyamagabe'), ('kimihurura', 'kimihurura'), ('kabeza', 'kabeza'), ('Nyabugogo', 'Nyabugogo'), ('Kibagabaga', 'Kibagabaga'), ('simba s', 'simba s'), ('Kcc', 'Kcc')], max_length=30)),
                 ('police', models.CharField(default='0789329012', max_length=15)),
                 ('health', models.CharField(default='0722142124', max_length=15)),
             ],

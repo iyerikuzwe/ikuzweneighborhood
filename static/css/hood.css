@@ -1,5 +1,4 @@
 body{
-    background-image: url("/static/img/bg.jpg"); 
     background-blend-mode: overlay;
     background-attachment: fixed;
     background-size:cover;
@@ -57,12 +56,12 @@ table {
 }
 
 td, th {
-    border: 1px solid #dddddd;
+    border: 1px solid darkgray;
     text-align: left;
     padding: 8px;
 }
 
 tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: darkgray;
 }
 

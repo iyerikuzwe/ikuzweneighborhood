@@ -91,7 +91,7 @@ class Business(models.Model):
     Class that contains Business details
     """
     name = models.CharField(max_length = 30)
-    description = models.TextField(default="Check out my business")
+    description = models.TextField(default="Describe your business")
     email = models.CharField(max_length = 30)
     user = models.ForeignKey(User)
     hood = models.ForeignKey(Neighbour)

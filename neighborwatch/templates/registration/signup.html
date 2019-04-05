@@ -9,7 +9,7 @@
 {% block content %}
 
 <div class="well">
-  <h1 class="insta">Hoodwatch</h1>
+  <h1 class="insta">ikuzwehoodwatch</h1>
   <form method="post">
     {% csrf_token %}
       {% for field in form %}
@@ -20,7 +20,7 @@
           <small style="display: none">{{ field.help_text }}</small>
         {% endif %}
         {% for error in field.errors %}
-          <p style="color: red">{{ error }}</p>
+          <p style="color: dodgerblue">{{ error }}</p>
         {% endfor %}
       </p>
       {% endfor %}
